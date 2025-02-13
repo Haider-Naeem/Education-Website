@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haider Education</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ebcde373c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header main section -->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/newlogo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    
+
+    <!-- footer section -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis
+        alias beatae cumque sequi asperiores nemo aliquid nihil delectus
+        possimus <br />laudantium non, accusamus, modi atque quae corrupti
+        deserunt commodi. Inventore.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p class="copyright">Made By Haider Naeem<a href="https://github.com/HaiderKFUEIT/Education-Website.git" target="_blank">
+        <i class="fa fa-github"></i></a></p>
+    </section>
+
+    <!---- javascript for hiding and showing menu ---->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+  </body>
+</html>
